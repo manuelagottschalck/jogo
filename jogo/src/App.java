@@ -1,5 +1,12 @@
-public class App {
+import javax.swing.JFrame;
+
+public class App extends JFrame{
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+        JFrame frame = new JFrame();
+        GamePanel panel = new GamePanel();
+        frame.setSize(800, 600);
+    /*  frame.setLocationRelativeTo(null); */
+        frame.setContentPane(panel);
+        frame.setVisible(true);
     }
 }
